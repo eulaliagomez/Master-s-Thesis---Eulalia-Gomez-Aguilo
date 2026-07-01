@@ -19,7 +19,7 @@ The thesis fits a stochastic age-structured SEIR model to weekly COVID-19 case c
 ---
 
 ## Repository structure
-
+```text
 repo/
 ├── Analysis/
 │ ├── Sensitivity_analysis/
@@ -33,6 +33,7 @@ repo/
 ├── Data_preprocessing/
 ├── Figure_production/
 └── Outcomes/
+```
 
 
 ---
@@ -115,15 +116,9 @@ Each script is self-contained and follows the same structure:
 Contains the raw RIVM line-list as downloaded:
 `COVID-19_casus_landelijk_tm_03102021.csv`
 
-This file is not included in the repository due to its size (~500 MB) and
-RIVM data licensing. It can be downloaded from:
-https://data.rivm.nl/covid-19/
-
 #### Data / Processed_data
 
-Eight CSV files (one per age group per wave) produced by
-`Data_preprocessing/covid19_age_preprocessing.py`, plus the full weekly
-all-ages series. These are the direct inputs to all modelling scripts.
+Eight CSV files (one per age group per wave) produced by `Data_preprocessing/covid19_age_preprocessing.py`, plus the full weekly all-ages series. These are the direct inputs to all modelling scripts.
 
 | File | Contents |
 |---|---|
@@ -169,6 +164,7 @@ generated as a by-product of the sensitivity analysis pipeline.
 
 ### Outcomes
 
+```text
 Contains all model outputs. Organised into subfolders mirroring the
 analysis structure.
 Outcomes/
@@ -182,7 +178,7 @@ Outcomes/
 │ ├── prior_posterior/ # prior vs posterior figures
 │ └── diagnostics/ # trace plots, posterior density plots
 └── figures/ # final thesis figures (.pdf and .png)
-
+```
 
 ---
 

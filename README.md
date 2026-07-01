@@ -164,21 +164,7 @@ generated as a by-product of the sensitivity analysis pipeline.
 
 ### Outcomes
 
-```text
-Contains all model outputs. Organised into subfolders mirroring the
-analysis structure.
-Outcomes/
-├── results/
-│ ├── wave1/ # sensitivity .rds files, Wave 1
-│ ├── wave2/
-│ ├── wave3/
-│ ├── wave4/
-│ ├── identifiability/ # wave1_identifiability_check outputs
-│ ├── phase_plots/ # figure_production outputs
-│ ├── prior_posterior/ # prior vs posterior figures
-│ └── diagnostics/ # trace plots, posterior density plots
-└── figures/ # final thesis figures (.pdf and .png)
-```
+Contains all .rds files by wave and data modification type: condition_wave{1-4}.rds. It also contains summaries: wave{1-4}_metrics.csv.
 
 ---
 
